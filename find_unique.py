@@ -1,7 +1,10 @@
+""" 
+this code will find unique item from a list
+where each other item contains twice
+"""
 def findUnique(arr, n) :
     #Your code goes here
-    res = arr[0]
-    for i in range(1, n):
-        res = res ^ arr[i]
-        print(res)
+    res=0
+    for i in arr:
+        res ^= i
     return res
